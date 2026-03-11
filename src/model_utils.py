@@ -1,4 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer # type: ignore
 
 def load_model_and_tokenizer(model_name='gpt2'):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
