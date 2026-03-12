@@ -25,3 +25,51 @@ def kl_loss(lens_logits, final_logits):
     loss = F.kl_div(log_probs_lens, probs_final, reduction='batchmean')
 
     return loss
+
+# Function to run Tuned Lens
+def run_tuned_lens(model, tokenizer, lenses, text, top_k=3, device='cpu'):
+    inputs = tokenizer(text, return_tensors='pt').to(device)
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    hidden_states = outputs.hidden_states
+    num_layers = model.config.n_layer
+
+    ln_f = model.transformer.ln_f
+    W_U = model.lm_head.weight
+
+    layer_prediction = {}
+
+    for layer_idx in range(1, num_layers):
+        h_l = hidden_states[layer_idx]
+
+        # Get last token
+        h_l_last_token = h_l[0, -1, :]
+
+        # Get actual lens
+        tuned_lens_l = lenses[str(layer_idx)]
+
+        # Calculate projection
+        logits = tuned_lens_l(h_l_last_token, ln_f, W_U)
+        probs = torch.softmax(logits, dim=-1)
+
+        top_probs, top_idx = torch.topk(probs, top_k, dim=-1) 
+        
+        # Get top tokens
+        top_tokens = [tokenizer.decode(idx.item()) for idx in top_idx]
+        layer_prediction[layer_idx] = list(zip(top_tokens, top_probs.tolist()))
+
+    # Add last layer
+    with torch.no_grad():
+        h_final_last_token = hidden_states[-1][0, -1, :]
+
+        logits_finales = h_final_last_token @ W_U.T
+        probs_finales = torch.softmax(logits_finales, dim=-1)
+
+        top_probs_fin, top_indices_fin = torch.topk(probs_finales, top_k, dim=-1)
+
+        top_tokens_fin = [tokenizer.decode(idx.item()) for idx in top_indices_fin]
+        layer_prediction[num_layers] = list(zip(top_tokens_fin, top_probs_fin.tolist()))
+        
+    return layer_prediction

@@ -11,7 +11,7 @@ from src.model_utils import prepare_dataloader
 # Configuration
 model_name = 'gpt2'
 batch_size = 8
-epochs = 1
+epochs = 2
 learning_rate = 1e-3
 max_length = 64
 device = "cuda" if torch.cuda.is_available() else "cpu" 
@@ -64,7 +64,7 @@ for epoch in range(epochs):
         # Calculate logits of last layer
         with torch.no_grad():
             h_final = hidden_states[-1]
-            logits_finals = model.lm_head(ln_f(h_final))
+            logits_finals = model.lm_head(h_final)
 
         # Train lens
         optimizer.zero_grad()
