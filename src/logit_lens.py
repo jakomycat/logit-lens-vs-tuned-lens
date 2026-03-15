@@ -34,6 +34,6 @@ def run_logit_lens(model, tokenizer, text, top_k=3):
         top_tokens = [tokenizer.decode(idx.item()) for idx in top_idx] # Convert to text
 
         # Save results
-        layer_predictions[f'Layer {layer_idx}'] = list(zip(top_tokens, top_probs.tolist()))
+        layer_predictions[layer_idx] = list(zip(top_tokens, top_probs.tolist()))
 
     return layer_predictions
