@@ -37,3 +37,33 @@ def run_logit_lens(model, tokenizer, text, top_k=3):
         layer_predictions[layer_idx] = list(zip(top_tokens, top_probs.tolist()))
 
     return layer_predictions
+
+def get_all_logit_lens_logits(model, tokenizer, text):
+    inputs = tokenizer(text, return_tensors='pt')
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    hidden_states = outputs.hidden_states
+
+    # Specific for GPT-2
+    ln_f = model.transformer.ln_f # Final layer norm
+    lm_head = model.lm_head # Unembedding matrix
+
+    layer_logits_dict = {}
+
+    for layer_idx, h_l in enumerate(hidden_states[1:], start=1):
+        h_l_last_token = h_l[0, -1, :]
+
+        # Apply norm
+        if layer_idx < (len(hidden_states) - 1):
+            h_l_norm = ln_f(h_l_last_token)
+        else: # No apply two times layer norm to the last layer
+            h_l_norm = h_l_last_token
+
+        logits = lm_head(h_l_norm) 
+        
+        # Save logits
+        layer_logits_dict[layer_idx] = logits
+
+    return layer_logits_dict
