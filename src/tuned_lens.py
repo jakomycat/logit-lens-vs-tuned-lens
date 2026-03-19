@@ -73,3 +73,34 @@ def run_tuned_lens(model, tokenizer, lenses, text, top_k=3, device='cpu'):
         layer_prediction[num_layers] = list(zip(top_tokens_fin, top_probs_fin.tolist()))
         
     return layer_prediction
+
+def get_all_tuned_lens_logits(model, tokenizer, lenses, text, device='cpu'):
+    inputs = tokenizer(text, return_tensors='pt').to(device)
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    hidden_states = outputs.hidden_states
+    num_layers = model.config.n_layer
+
+    ln_f = model.transformer.ln_f
+    W_U = model.lm_head.weight
+
+    layer_logits_dict = {}
+
+    for layer_idx in range(1, num_layers):
+        h_l = hidden_states[layer_idx]
+
+        h_l_last_token = h_l[0, -1, :] # Last token
+        tuned_lens_l = lenses[str(layer_idx)] # Actual lens
+        
+        # Calculate logits
+        logits = tuned_lens_l(h_l_last_token, ln_f, W_U)
+        
+        layer_logits_dict[layer_idx] = logits
+
+    # Get last layer
+    final_logits = outputs.logits[0, -1, :]
+    layer_logits_dict[num_layers] = final_logits
+
+    return layer_logits_dict
