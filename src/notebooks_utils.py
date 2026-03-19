@@ -24,9 +24,9 @@ def calculate_kl_divergence(logits_layer, final_logits):
     return kl_div
 
 def calculate_reciprocal_rank(layer_logits, target_token_id):
-    sorted_indices = torch.argsort(layer_logits, descending=True)
+    sorted_idx = torch.argsort(layer_logits, descending=True)
     
-    rank_tensor = (sorted_indices == target_token_id).nonzero(as_tuple=True)[0]
+    rank_tensor = (sorted_idx == target_token_id).nonzero(as_tuple=True)[0]
     rank_position = rank_tensor.item() + 1
     
     reciprocal_rank = 1.0 / rank_position
