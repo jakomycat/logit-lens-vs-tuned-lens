@@ -1,0 +1,91 @@
+category	prompt	target
+grammar	The cat is grooming itself with	 its
+grammar	He and I are good friends, so	 we
+grammar	The books are on the shelf. Please grab	 them
+grammar	If you drop the glass, it	 will
+grammar	She has an older brother, and	 he
+grammar	The delicious cake was baked by	 her
+grammar	Neither John nor Mary brought	 their
+grammar	Look at those dark clouds; it is going to	 rain
+grammar	I have a car, but my sister doesn't have	 one
+grammar	He runs very fast, but she runs	 faster
+grammar	We really enjoyed the movie, didn't	 we
+grammar	A dog is very loyal to	 its
+grammar	She is much taller than	 me
+grammar	The scissors are sharp, so be careful with	 them
+grammar	I would have helped if you had	 asked
+grammar	Although he was very sick, he went to	 work
+grammar	She is the smartest student in the	 class
+grammar	There is a spider on the wall. Do not touch	 it
+grammar	I want to buy this shirt, but it costs too	 much
+grammar	My parents are arriving tomorrow, so I need to pick	 them
+grammar	He usually drinks coffee, but today he is drinking	 tea
+grammar	I have known him for a very long	 time
+grammar	We had already eaten dinner when they	 arrived
+grammar	She doesn't like apples, and neither do	 I
+grammar	Everyone in the room should do	 their
+grammar	I have two sisters. Both of	 them
+grammar	This red car is mine, and that blue one is	 yours
+grammar	As soon as the bell rings, the students	 will
+grammar	I already gave the money to	 him
+grammar	The test was very difficult, but I passed	 it
+logic	Two, four, six, eight,	 ten
+logic	A, B, C, D,	 E
+logic	Spring, Summer, Autumn,	 Winter
+logic	If John is taller than Mary, and Mary is taller than Sue, then John is taller than	 Sue
+logic	Left is the opposite of	 right
+logic	Hot is the opposite of	 cold
+logic	The day before Tuesday is	 Monday
+logic	The month after December is	 January
+logic	A pentagon has five sides. A hexagon has	 six
+logic	First, second, third,	 fourth
+logic	100, 90, 80, 70,	 60
+logic	True is the opposite of	 false
+logic	Inside is the opposite of	 outside
+logic	If tomorrow is Friday, then today is	 Thursday
+logic	If all dogs are mammals, and a beagle is a dog, then a beagle is a	 mammal
+logic	Three times three equals	 nine
+logic	Half of ten is	 five
+logic	If a train is faster than a car, and a plane is faster than a train, then a plane is faster than a	 car
+logic	North, South, East,	 West
+logic	Morning, afternoon, evening,	 night
+logic	Double of four is	 eight
+logic	Ten divided by two is	 five
+logic	Heavy is the opposite of	 light
+logic	Fast is the opposite of	 slow
+logic	If the glass is not full, then it is	 empty
+logic	If the switch is not on, then it is	 off
+logic	A spider has eight legs. A normal insect has	 six
+logic	Yesterday, today,	 tomorrow
+logic	The English alphabet starts with A and ends with	 Z
+logic	If x is 5 and y is 5, then x plus y is	 ten
+common sense	Cows give us	 milk
+common sense	You use an umbrella to stay	 dry
+common sense	A bicycle has two	 wheels
+common sense	In the morning, the first meal you eat is	 breakfast
+common sense	When you are very tired, you should	 sleep
+common sense	Apples, bananas, and oranges are types of	 fruit
+common sense	You use a pen or pencil to	 write
+common sense	The color of a ripe banana is usually	 yellow
+common sense	Leaves fall from the trees in the	 autumn
+common sense	To see in a dark room, you need to turn on the	 light
+common sense	You wash your dirty hands with soap and	 water
+common sense	People wear thick jackets when the weather is	 cold
+common sense	The person who treats you when you are sick is a	 doctor
+common sense	When you boil water, it turns into	 steam
+common sense	You chew your food using your	 teeth
+common sense	The green parts of a plant are called	 leaves
+common sense	A dog will often chase a	 cat
+common sense	If you drop a glass on a hard floor, it will	 break
+common sense	To buy things at the supermarket, you need	 money
+common sense	At a desk, you usually sit on a	 chair
+common sense	People drive their cars on the	 road
+common sense	To listen to music, you use your	 ears
+common sense	A baby cow is called a	 calf
+common sense	Adding sugar to your coffee makes it taste	 sweet
+common sense	Lemons are known for tasting very	 sour
+common sense	You read the words printed in a	 book
+common sense	When you are very thirsty, you should	 drink
+common sense	At a restaurant, you choose your food from a	 menu
+common sense	The opposite of a tall person is a	 short
+common sense	When you make a mistake with a pencil, you use an	 eraser
