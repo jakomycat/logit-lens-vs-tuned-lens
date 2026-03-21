@@ -1,91 +1,201 @@
 category	prompt	target
-grammar	The cat is grooming itself with	 its
-grammar	He and I are good friends, so	 we
-grammar	The books are on the shelf. Please grab	 them
-grammar	If you drop the glass, it	 will
-grammar	She has an older brother, and	 he
-grammar	The delicious cake was baked by	 her
-grammar	Neither John nor Mary brought	 their
-grammar	Look at those dark clouds; it is going to	 rain
-grammar	I have a car, but my sister doesn't have	 one
-grammar	He runs very fast, but she runs	 faster
-grammar	We really enjoyed the movie, didn't	 we
-grammar	A dog is very loyal to	 its
-grammar	She is much taller than	 me
-grammar	The scissors are sharp, so be careful with	 them
-grammar	I would have helped if you had	 asked
-grammar	Although he was very sick, he went to	 work
-grammar	She is the smartest student in the	 class
-grammar	There is a spider on the wall. Do not touch	 it
-grammar	I want to buy this shirt, but it costs too	 much
-grammar	My parents are arriving tomorrow, so I need to pick	 them
-grammar	He usually drinks coffee, but today he is drinking	 tea
-grammar	I have known him for a very long	 time
-grammar	We had already eaten dinner when they	 arrived
-grammar	She doesn't like apples, and neither do	 I
-grammar	Everyone in the room should do	 their
-grammar	I have two sisters. Both of	 them
-grammar	This red car is mine, and that blue one is	 yours
-grammar	As soon as the bell rings, the students	 will
-grammar	I already gave the money to	 him
-grammar	The test was very difficult, but I passed	 it
-logic	Two, four, six, eight,	 ten
-logic	A, B, C, D,	 E
-logic	Spring, Summer, Autumn,	 Winter
-logic	If John is taller than Mary, and Mary is taller than Sue, then John is taller than	 Sue
-logic	Left is the opposite of	 right
-logic	Hot is the opposite of	 cold
-logic	The day before Tuesday is	 Monday
-logic	The month after December is	 January
-logic	A pentagon has five sides. A hexagon has	 six
-logic	First, second, third,	 fourth
-logic	100, 90, 80, 70,	 60
-logic	True is the opposite of	 false
-logic	Inside is the opposite of	 outside
-logic	If tomorrow is Friday, then today is	 Thursday
-logic	If all dogs are mammals, and a beagle is a dog, then a beagle is a	 mammal
-logic	Three times three equals	 nine
-logic	Half of ten is	 five
-logic	If a train is faster than a car, and a plane is faster than a train, then a plane is faster than a	 car
-logic	North, South, East,	 West
-logic	Morning, afternoon, evening,	 night
-logic	Double of four is	 eight
-logic	Ten divided by two is	 five
-logic	Heavy is the opposite of	 light
-logic	Fast is the opposite of	 slow
-logic	If the glass is not full, then it is	 empty
-logic	If the switch is not on, then it is	 off
-logic	A spider has eight legs. A normal insect has	 six
-logic	Yesterday, today,	 tomorrow
-logic	The English alphabet starts with A and ends with	 Z
-logic	If x is 5 and y is 5, then x plus y is	 ten
-common sense	Cows give us	 milk
-common sense	You use an umbrella to stay	 dry
-common sense	A bicycle has two	 wheels
-common sense	In the morning, the first meal you eat is	 breakfast
-common sense	When you are very tired, you should	 sleep
-common sense	Apples, bananas, and oranges are types of	 fruit
-common sense	You use a pen or pencil to	 write
-common sense	The color of a ripe banana is usually	 yellow
-common sense	Leaves fall from the trees in the	 autumn
-common sense	To see in a dark room, you need to turn on the	 light
-common sense	You wash your dirty hands with soap and	 water
-common sense	People wear thick jackets when the weather is	 cold
-common sense	The person who treats you when you are sick is a	 doctor
-common sense	When you boil water, it turns into	 steam
-common sense	You chew your food using your	 teeth
-common sense	The green parts of a plant are called	 leaves
-common sense	A dog will often chase a	 cat
-common sense	If you drop a glass on a hard floor, it will	 break
-common sense	To buy things at the supermarket, you need	 money
-common sense	At a desk, you usually sit on a	 chair
-common sense	People drive their cars on the	 road
-common sense	To listen to music, you use your	 ears
-common sense	A baby cow is called a	 calf
-common sense	Adding sugar to your coffee makes it taste	 sweet
-common sense	Lemons are known for tasting very	 sour
-common sense	You read the words printed in a	 book
-common sense	When you are very thirsty, you should	 drink
-common sense	At a restaurant, you choose your food from a	 menu
-common sense	The opposite of a tall person is a	 short
-common sense	When you make a mistake with a pencil, you use an	 eraser
+Knowledge	The capital of Italy is	 Rome
+Knowledge	The capital of Germany is	 Berlin
+Knowledge	The capital of Spain is	 Madrid
+Knowledge	The capital of Russia is	 Moscow
+Knowledge	The capital of China is	 Beijing
+Knowledge	The capital of Japan is	 Tokyo
+Knowledge	The capital of Egypt is	 Cairo
+Knowledge	The capital of Greece is	 Athens
+Knowledge	The capital of Canada is	 Ottawa
+Knowledge	The Eiffel Tower is located in	 Paris
+Knowledge	The Colosseum is located in	 Rome
+Knowledge	The Great Wall of	 China
+Knowledge	The Statue of Liberty is in New	 York
+Knowledge	The largest ocean on Earth is the	 Pacific
+Knowledge	The Sahara is a very large	 desert
+Knowledge	Mount Everest is a very tall	 mountain
+Knowledge	The Earth is a	 planet
+Knowledge	The center of the solar system is the	 Sun
+Knowledge	The closest planet to the sun is	 Mercury
+Knowledge	The largest planet in the solar system is	 Jupiter
+Knowledge	The red planet is known as	 Mars
+Knowledge	The planet famous for its rings is	 Saturn
+Knowledge	A person from France is called	 French
+Knowledge	A person from Germany is called	 German
+Knowledge	A person from Italy is called	 Italian
+Knowledge	A person from Spain is called	 Spanish
+Knowledge	A person from China is called	 Chinese
+Knowledge	A person from Japan is called	 Japanese
+Knowledge	The official language of Brazil is	 Portuguese
+Knowledge	The currency of the United States is the	 dollar
+Knowledge	The currency of the European Union is the	 euro
+Knowledge	The currency of Japan is the	 yen
+Knowledge	The currency of the United Kingdom is the	 pound
+Knowledge	The author of Hamlet is William	 Shakespeare
+Knowledge	The author of 1984 is George	 Orwell
+Knowledge	The author of Pride and Prejudice is Jane	 Austen
+Knowledge	The painter of the Mona Lisa is Leonardo da	 Vinci
+Knowledge	The theory of relativity was proposed by Albert	 Einstein
+Knowledge	The laws of gravity were discovered by Isaac	 Newton
+Knowledge	The inventor of the light bulb is Thomas	 Edison
+Knowledge	The inventor of the telephone is Alexander Graham	 Bell
+Knowledge	The founder of Microsoft is Bill	 Gates
+Knowledge	The founder of Apple is Steve	 Jobs
+Knowledge	The founder of Facebook is Mark	 Zuckerberg
+Knowledge	The 16th President of the United States was Abraham	 Lincoln
+Knowledge	The 44th President of the United States was Barack	 Obama
+Knowledge	Water is made of oxygen and	 hydrogen
+Knowledge	The largest mammal on Earth is the blue	 whale
+Knowledge	Gold is a very valuable	 metal
+Knowledge	An apple is a type of	 fruit
+Arithmetic	1 + 2 =	 3
+Arithmetic	2 + 1 =	 3
+Arithmetic	2 + 3 =	 5
+Arithmetic	3 + 2 =	 5
+Arithmetic	3 + 4 =	 7
+Arithmetic	4 + 3 =	 7
+Arithmetic	4 + 5 =	 9
+Arithmetic	5 + 4 =	 9
+Arithmetic	5 + 6 =	 11
+Arithmetic	6 + 5 =	 11
+Arithmetic	6 + 7 =	 13
+Arithmetic	7 + 6 =	 13
+Arithmetic	7 + 8 =	 15
+Arithmetic	8 + 7 =	 15
+Arithmetic	8 + 9 =	 17
+Arithmetic	9 + 8 =	 17
+Arithmetic	9 + 9 =	 18
+Arithmetic	1 + 9 =	 10
+Arithmetic	9 + 1 =	 10
+Arithmetic	2 + 8 =	 10
+Arithmetic	8 + 2 =	 10
+Arithmetic	3 + 7 =	 10
+Arithmetic	7 + 3 =	 10
+Arithmetic	4 + 6 =	 10
+Arithmetic	6 + 4 =	 10
+Arithmetic	10 - 2 =	 8
+Arithmetic	10 - 3 =	 7
+Arithmetic	10 - 4 =	 6
+Arithmetic	10 - 5 =	 5
+Arithmetic	10 - 6 =	 4
+Arithmetic	10 - 7 =	 3
+Arithmetic	10 - 8 =	 2
+Arithmetic	10 - 9 =	 1
+Arithmetic	5 - 1 =	 4
+Arithmetic	5 - 2 =	 3
+Arithmetic	5 - 3 =	 2
+Arithmetic	5 - 4 =	 1
+Arithmetic	9 - 1 =	 8
+Arithmetic	8 - 1 =	 7
+Arithmetic	7 - 1 =	 6
+Arithmetic	2 * 3 =	 6
+Arithmetic	3 * 2 =	 6
+Arithmetic	2 * 4 =	 8
+Arithmetic	4 * 2 =	 8
+Arithmetic	2 * 5 =	 10
+Arithmetic	5 * 2 =	 10
+Arithmetic	3 * 3 =	 9
+Arithmetic	4 * 4 =	 16
+Arithmetic	5 * 5 =	 25
+Arithmetic	10 * 10 =	 100
+Sequences	A, B, C, D,	 E
+Sequences	B, C, D, E,	 F
+Sequences	C, D, E, F,	 G
+Sequences	D, E, F, G,	 H
+Sequences	E, F, G, H,	 I
+Sequences	F, G, H, I,	 J
+Sequences	G, H, I, J,	 K
+Sequences	H, I, J, K,	 L
+Sequences	I, J, K, L,	 M
+Sequences	J, K, L, M,	 N
+Sequences	K, L, M, N,	 O
+Sequences	L, M, N, O,	 P
+Sequences	M, N, O, P,	 Q
+Sequences	N, O, P, Q,	 R
+Sequences	O, P, Q, R,	 S
+Sequences	P, Q, R, S,	 T
+Sequences	Q, R, S, T,	 U
+Sequences	R, S, T, U,	 V
+Sequences	S, T, U, V,	 W
+Sequences	T, U, V, W,	 X
+Sequences	U, V, W, X,	 Y
+Sequences	V, W, X, Y,	 Z
+Sequences	1, 2, 3, 4,	 5
+Sequences	2, 3, 4, 5,	 6
+Sequences	3, 4, 5, 6,	 7
+Sequences	4, 5, 6, 7,	 8
+Sequences	5, 6, 7, 8,	 9
+Sequences	6, 7, 8, 9,	 10
+Sequences	7, 8, 9, 10,	 11
+Sequences	8, 9, 10, 11,	 12
+Sequences	9, 10, 11, 12,	 13
+Sequences	Monday, Tuesday, Wednesday,	 Thursday
+Sequences	Tuesday, Wednesday, Thursday,	 Friday
+Sequences	Wednesday, Thursday, Friday,	 Saturday
+Sequences	Thursday, Friday, Saturday,	 Sunday
+Sequences	Friday, Saturday, Sunday,	 Monday
+Sequences	January, February, March,	 April
+Sequences	February, March, April,	 May
+Sequences	March, April, May,	 June
+Sequences	April, May, June,	 July
+Sequences	May, June, July,	 August
+Sequences	June, July, August,	 September
+Sequences	July, August, September,	 October
+Sequences	August, September, October,	 November
+Sequences	September, October, November,	 December
+Sequences	First, second, third,	 fourth
+Sequences	Second, third, fourth,	 fifth
+Sequences	Third, fourth, fifth,	 sixth
+Sequences	Spring, Summer, Autumn,	 Winter
+Sequences	I, II, III, IV,	 V
+Syntax	One car, two	 cars
+Syntax	One dog, many	 dogs
+Syntax	One cat, two	 cats
+Syntax	One book, two	 books
+Syntax	One tree, many	 trees
+Syntax	One house, two	 houses
+Syntax	One apple, two	 apples
+Syntax	One boy, two	 boys
+Syntax	One girl, many	 girls
+Syntax	One bird, two	 birds
+Syntax	One shoe, two	 shoes
+Syntax	One hand, two	 hands
+Syntax	One eye, two	 eyes
+Syntax	One man, two	 men
+Syntax	One woman, two	 women
+Syntax	Today I walk. Yesterday I	 walked
+Syntax	Today I jump. Yesterday I	 jumped
+Syntax	Today I play. Yesterday I	 played
+Syntax	Today I look. Yesterday I	 looked
+Syntax	Today I run. Yesterday I	 ran
+Syntax	Today I eat. Yesterday I	 ate
+Syntax	Today I sing. Yesterday I	 sang
+Syntax	Today I sleep. Yesterday I	 slept
+Syntax	Today I drive. Yesterday I	 drove
+Syntax	Today I write. Yesterday I	 wrote
+Syntax	I have my book. You have	 your
+Syntax	He has his book. She has	 her
+Syntax	We have our book. They have	 their
+Syntax	The man took his coat. The woman took	 her
+Syntax	The boy loves his dog. The girl loves	 her
+Syntax	The king wears his crown. The queen wears	 her
+Syntax	He washed his hands. She washed	 her
+Syntax	The brother helped his sister. The sister helped	 her
+Syntax	He drives his car. She drives	 her
+Syntax	He packed his bag. She packed	 her
+Syntax	Tall, taller. Short,	 shorter
+Syntax	Big, bigger. Small,	 smaller
+Syntax	Fast, faster. Slow,	 slower
+Syntax	High, higher. Low,	 lower
+Syntax	Old, older. Young,	 younger
+Syntax	Cold, colder. Hot,	 hotter
+Syntax	Hard, harder. Soft,	 softer
+Syntax	Rich, richer. Poor,	 poorer
+Syntax	Smart, smarter. Dumb,	 dumber
+Syntax	Strong, stronger. Weak,	 weaker
+Syntax	I am, you	 are
+Syntax	He is, they	 are
+Syntax	She is, we	 are
+Syntax	The cat is, the cats	 are
+Syntax	The dog barks, the dogs	 bark
