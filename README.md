@@ -27,11 +27,13 @@ Este repositorio busca replicar estas metodologías y comparar sus resultados cu
 
 ## 2. Metodología y Arquitectura del Proyecto
 
-El código está diseñado para ser modular y extensible. Los experimentos se dividen en las siguientes fases:
+### 2.1. Configuración del Modelo y los Datos
 
-1.  **Extracción de Activaciones:** Utilizando ganchos (hooks) en PyTorch para capturar $h_l$ durante el paso hacia adelante (forward pass).
-2.  **Entrenamiento del Tuned Lens:** Implementado en `train.py`, donde optimizamos los parámetros de $T_l$ minimizando la divergencia KL respecto a las predicciones de la capa final, o mediante pérdida de entropía cruzada.
-3.  **Evaluación:** Comparación de la trayectoria de los logits a través de los `notebooks/`.
+El código está diseñado para funcionar especificamente para GPT-2 small, no se ha probado para otros modelos. Aunque en el futuro se tiene pensado expandir el código para que funcione con distintos modelos. El modelo usado tiene doce capas ocultas ($L = 12$).
+
+### 2.2. Extracción de Estados Ocultos
+
+
 
 ### Estructura del Repositorio
 * `src/`: Módulos core (definición de Lenses, utilidades de extracción).
